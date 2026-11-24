@@ -2,7 +2,8 @@ pipeline {
   agent any
       environment {
          DOCKERHUB_USER = "jayanthnj"
-
+         IMAGE_NAME     = "${DOCKERHUB_USER}/my-fifth-project"
+         DOCKER_CREDS   = credentials('my-fifth-project-creds')
     }
 
 
